@@ -3,11 +3,15 @@
 
 #!/bin/bash
 
-# Get the filename without extension
-FILENAME="${CFILE%.*}"
+export CFILE=main.c
+gcc -Wall -Werror -Wextra -pedantic $CFILE -o cisfun
 
-# Compile the C file without linking
-gcc -c "$CFILE" -o "$FILENAME.o"
+
+
+
+
+
+
 
 
 
