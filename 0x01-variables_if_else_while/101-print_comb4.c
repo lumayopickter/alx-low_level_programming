@@ -1,10 +1,10 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * main - Entry point of the program
  *
- * Description: This program prints all possible different combinations of
- *              three digits in ascending order, separated by a comma and space.
+ * Description: This program prints all possible different combinations of three digits
+ *              satisfying the given conditions.
  *
  * Return: Always 0 (Success)
  */
@@ -33,6 +33,6 @@ int main(void)
 
     putchar('\n');
 
-    return (0);
+    return 0;
 }
 
