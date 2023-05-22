@@ -3,8 +3,8 @@
 /**
  * main - Entry point of the program
  *
- * Description: This program prints all possible different combinations of three digits
- *              satisfying the given conditions.
+ * Description: This program prints all possible different combinations of
+ * three digits satisfying the given conditions.
  *
  * Return: Always 0 (Success)
  */
