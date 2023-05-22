@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -12,13 +12,12 @@ int main(void)
 {
 	int num;
 
-	num = 0;
-	while (num <= 9)
+	for (num = 0; num < 10; num++)
 	{
-		write(1, &num, 1);
-		num++;
+		putchar(num + '0');
 	}
-	write(1, "\n", 1);
+
+	putchar('\n');
 
 	return (0);
 }
