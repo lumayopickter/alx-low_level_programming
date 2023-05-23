@@ -5,10 +5,10 @@
  * @c: The character to be written
  *
  * Return: On success, returns the number of characters written.
- * On error, returns -1 and sets errno appropriately.
+ *         On error, returns -1 and sets errno appropriately.
  */
 int _putchar(char c)
 {
-	return write(1, &c, 1);
+	return (write(1, &c, 1));
 }
 
