@@ -18,13 +18,30 @@ void print_triangle(int size)
 		return;
 	}
 
-	for (i = 0; i < size; i++)
+	for (i = 1; i <= size; i++)
 	{
-		for (j = 0; j <= i; j++)
-		{
+		for (j = 1; j <= size - i; j++)
+			_putchar(' ');
+
+		for (j = 1; j <= i; j++)
 			_putchar('#');
-		}
+
 		_putchar('\n');
 	}
+}
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+	print_triangle(2);
+	print_triangle(10);
+	print_triangle(1);
+	print_triangle(0);
+
+	return (0);
 }
 
