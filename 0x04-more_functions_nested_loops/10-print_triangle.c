@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_triangle - Prints a triangle of a given size.
- * @size: The size of the triangle.
+ * print_triangle - Prints a triangle using #
+ * @size: Size of the triangle
  *
  * Description: This function prints a triangle using the '#' character.
- * The size parameter determines the number of rows in the triangle.
- * If the size is 0 or less, it only prints a new line.
+ *              The size parameter determines number of rows in triangle.
+ *              If size is 0 or less, it prints only a new line.
  */
 void print_triangle(int size)
 {
@@ -18,30 +18,12 @@ void print_triangle(int size)
 		return;
 	}
 
-	for (i = 1; i <= size; i++)
+	for (i = 0; i < size; i++)
 	{
-		for (j = 1; j <= size - i; j++)
-			_putchar(' ');
-
-		for (j = 1; j <= i; j++)
+		for (j = 0; j <= i; j++)
 			_putchar('#');
 
 		_putchar('\n');
 	}
-}
-
-/**
- * main - Entry point
- *
- * Return: Always 0
- */
-int main(void)
-{
-	print_triangle(2);
-	print_triangle(10);
-	print_triangle(1);
-	print_triangle(0);
-
-	return (0);
 }
 
