@@ -5,8 +5,8 @@
  * @size: The size of the triangle.
  *
  * Description: This function prints a triangle using the '#' character.
- *        The size parameter determines height and base width of triangle.
- *        If the size is 0 or less, it only prints a new line.
+ * The size parameter determines the number of rows in the triangle.
+ * If the size is 0 or less, it only prints a new line.
  */
 void print_triangle(int size)
 {
@@ -18,11 +18,12 @@ void print_triangle(int size)
 		return;
 	}
 
-	for (i = 0; i < size; i++)
+	for (i = 1; i <= size; i++)
 	{
-		for (j = 0; j <= i; j++)
+		for (j = 1; j <= i; j++)
+		{
 			_putchar('#');
-
+		}
 		_putchar('\n');
 	}
 }
