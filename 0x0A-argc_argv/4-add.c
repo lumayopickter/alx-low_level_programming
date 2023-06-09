@@ -15,11 +15,11 @@ bool is_positive_number(const char *str)
 	while (str[i] != '\0')
 	{
 		if (str[i] < '0' || str[i] > '9')
-			return false;
+			return (false);
 		i++;
 	}
 
-	return true;
+	return (true);
 }
 
 /**
