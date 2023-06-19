@@ -3,11 +3,11 @@
 
 /**
  * struct dog - Structure representing a dog
- * @name: Name of the dog (string)
- * @age: Age of the dog (float)
- * @owner: Owner of the dog (string)
+ * @name: Name of the dog
+ * @age: Age of the dog
+ * @owner: Owner of the dog
  *
- * Description: This structure represents a dog with its name, age, and owner.
+ * Description: The structure represent dog,its name, age, and owner.
  */
 struct dog
 {
@@ -15,6 +15,9 @@ struct dog
 	float age;
 	char *owner;
 };
+
+/* Function prototype */
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif /* DOG_H */
 
